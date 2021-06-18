@@ -2,18 +2,20 @@
 
 @media screen and (min-width:1000px) {
 	#portfolio { background:#fff; width:1600px; }
-	.pt0 { width:1600px; height:80px; color:#000; text-align:left; vertical-align:middle }
-	.pt1 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 5px 0px }
-	.pt2 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 5px 0px }
-	.pt3 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
-	.pt4 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
-	.pt5 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
-	.pt6 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 0px 0px }
-	.pt7 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
-	.pt8 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
-	.pt9 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle } 
-	.pt_h2 { color:#000; width:810px }
-	.pt_h2 h2 { color:#000; text-align:left; vertical-align:middle }
+	.pt0 { color:#666; text-align:left; vertical-align:middle }
+	.pt_list::after { content:''; display:block; clear:both; }
+	.pt_list > div { margin-bottom: 40px; width:16% }
+	.pt1 { float:left; text-align:left; vertical-align:middle; }
+	.pt2 { float:left; text-align:left; vertical-align:middle; }
+	.pt3 { float:left; text-align:left; vertical-align:middle; }
+	.pt4 { float:left; text-align:left; vertical-align:middle; }
+	.pt5 { float:left; text-align:left; vertical-align:middle; }
+	.pt6 { float:left; text-align:left; vertical-align:middle; }
+	.pt7 { float:left; text-align:left; vertical-align:middle; }
+	.pt8 { float:left; text-align:left; vertical-align:middle; }
+	.pt9 { float:left; text-align:left; vertical-align:middle; } 
+	.pt_h2 { color:#000; }
+	.pt_h2 h2 { text-align:left; vertical-align:middle }
 
 	#portfolio::after { content:''; display:block; clear:both; }
 	#portfolio dl { width:235px; margin:10px 0px 0px 10px; line-height:30px }
