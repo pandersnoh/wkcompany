@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@media screen and (min-width:1280px) {
+	div#slidepage_container { background:#000000; position:fixed; width:100%; right:0px; top:0px; z-index:999; margin:0; padding:0 }
+	div#slide_bg { background:#333; width:1280px; height:3000px; position:absolute; top:0px; right:-1200px; z-index:995; opacity:0.8; filter:Alpha(opacity=80) }
+
+	div#slidebutton_wrap { position:absolute; width:1280px; display:block; top:200px; right:-1160px; z-index:995 }
+	div#slideopen_1 { width:40px; height:200px; z-index:999; margin:0; padding:0 }
+	div#slideopen_1 a { display:block; cursor:pointer; width:40px; height:200px }
+	div#slideopen_2 {  width:40px; height:200px; z-index:999; margin:0; padding:0 }
+	div#slideopen_2 a { display:block; cursor:pointer; width:40px; height:200px }
+	div.slidepage_hide { width:40px; height:200px; z-index:1500; margin:0; padding:0 }
+	div.slidepage_hide a { display:block; cursor:pointer; width:40px; height:200px }
+
+	div#slide_preview { width:77px; height:100%; min-height:800px; background:#333; float:left; z-index:999 }
+	div#slide_preview ul.preview_space { margin:0; padding:0 }
+	div#slidepage_header { width:100%; height:50px; background:#333; padding-left:15px }	
+	div#slidepage_header h2 { display:inline }
+	div#slidepage_title { background:#333; color:#fff; float:left }
+	div.slidepage_close { background:#333; float:left;  }
+	
+	div#slide_wrap1 { width:1280px; height:3000px; right:-1200px; background:url(../images/dual/side_bg.jpg) repeat 20px; z-index:997; top:0px; position:absolute; }
+	div#slide_content1 { width:1280px; padding:10px 0px 0px 20px }
+	div#slide_article1 { width:100% }
+
+	div#slide_wrap2 { width:1280px; height:3000px; right:-1200px; background:url(../images/dual/side_bg.jpg) repeat 20px; z-index:996; top:0px; position:absolute; }
+	div#slide_content2 { width:1280px; padding:10px 0px 0px 20px }
+	div#slide_article2 { width:100% }
+
+	ul#slide_section { width:100%; min-width:1000px; height:3000px; background:#333; margin:0; padding:0 }
+	ul#slide_section li { padding:0px 0px 15px 15px; float:left }
+	ul#slide_section li img { width:300px; height:200px }
+	}
+
+@media screen and (max-width:1279px) {
+	div#slidepage_container { display:none }
+	}

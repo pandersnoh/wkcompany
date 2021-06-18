@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+	#latest { background:#fff; text-align:center; width:1600px }
+	#latest h2 { color:#000; text-align:left; vertical-align:middle } 
+	/* .pt_h2 h2로 지정했을시 IE8 에서는 좌측정렬이 적용안됨. 
+	선언 시 "클래스의 자손 지정"으로는 IE8에서 읽지 못하는걸수도 있음. */
+
+	.pt1 { background:#fff; border:0px; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt2 { background:#fff; border:0px; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt3 { background:#fff; border:0px; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt4 { background:#fff; border:0px; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt_h2 { color:#000; width: 1600px; }
+
+	#latest dl { width:97%; margin:5px 0px 5px 7px }
+	#latest dt { }
+	#latest dd { line-height:150%;  }
+	#latest p.newsdate { font-size:16px; margin:7px 0px 0px 7px }
+	#latest p.origin { color:#fff; width:98%; font:bold 11px 'nanum'; text-align:right }
+
+	div.pt_img img { width:48%; margin:7px 7px 0px 7px }
+	}
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	#latest { background:#fff; text-align:center; width:100% }
+	.pt1 { background:#fff; border:0px; width:85%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt2 { background:#fff; border:0px; width:85%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt3 { background:#fff; border:0px; width:85%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt4 { background:#fff; border:0px; width:85%; text-align:left; vertical-align:middle; margin-bottom:5px }
+
+	#latest dl { width:95%; margin:5px 5px 5px 7px }
+	#latest dt { font:bold 12pt 'nanum' }
+	#latest dd { font:normal 10pt 'nanum'; line-height:17px  }
+	#latest p.newsdate { font:bold 9pt 'nanum'; margin:7px 0px 0px 7px }
+	#latest p.origin { color:#fff; font:bold 11px 'nanum'; text-align:right; line-height:20px; margin:0px 20px 0px 0px }
+
+	div.pt_img img { width:48%; margin:7px 0px 0px 7px }
+
+ }
+
+@media screen and (min-width:150px) and (max-width:639px) {
+	#latest { background:#fff; width:100%; padding-top:5px }
+	.pt1 { background:#fff; border:0px; width:90%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt2 { background:#fff; border:0px; width:90%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt3 { background:#fff; border:0px; width:90%; text-align:left; vertical-align:middle; margin-bottom:5px }
+	.pt4 { background:#fff; border:0px; width:90%; text-align:left; vertical-align:middle; margin-bottom:5px }
+
+	#latest dl { width:95%; float:left; margin:0px 0px 7px 7px; line-height:20px; }
+	#latest dt { font:bold 11pt '돋움'; line-height:20px }
+	#latest dd { font:normal 9pt 'nanum' }
+	#latest p.newsdate { font:bold 8pt 'nanum'; margin:7px 0px 0px 7px }
+	#latest p.origin { color:#fff; font:bold 8pt '돋움'; text-align:right; line-height:20px; margin:0px 15px 0px 0px }
+
+	div.pt_img img { width:95%; margin:7px 5px 0px 7px }
+	img.pt_img2 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+ }

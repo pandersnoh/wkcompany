@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+	#portfolio { background:#fff; width:1600px; }
+	.pt0 { width:1600px; height:80px; color:#000; text-align:left; vertical-align:middle }
+	.pt1 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 5px 0px }
+	.pt2 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 5px 0px }
+	.pt3 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
+	.pt4 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
+	.pt5 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
+	.pt6 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 0px 0px }
+	.pt7 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
+	.pt8 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle; margin:0px 30px 0px 0px }
+	.pt9 { float:left; width:250px; height:280px; text-align:left; vertical-align:middle } 
+	.pt_h2 { color:#000; width:810px }
+	.pt_h2 h2 { color:#000; text-align:left; vertical-align:middle }
+
+	#portfolio::after { content:''; display:block; clear:both; }
+	#portfolio dl { width:235px; margin:10px 0px 0px 10px; line-height:30px }
+	#portfolio dt { line-height:100%; font-size: 16px; margin:10px 0; }
+	#portfolio dd { font-size: 14px; line-height:100%; margin:10px 0; color:#666; }
+	#portfolio a { display: block; overflow:hidden; }
+	.pt_img img { width:250px; height:150px; float:left; margin:0px 15px 0px 7px }
+
+	#form { width:610px; padding:5px 5px 5px 5px }
+	#form form { margin-left:175px }
+
+	#page { width:610px; padding:5px 5px 5px 5px }
+	#page ul { margin:10px 0px 0px 175px }
+	#page ul li { float:left; margin-right:12px }
+	#page ul li a { color:#666 } 
+	#page ul li a:hover { color:#c00 } 	
+	}
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	#portfolio { background:#fff; text-align:center; width:600px; height:1200px }
+	.pt0 { width:90%; height:50px; text-align:center; vertical-align:middle }
+	.pt1 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 75px 5px 0px }
+	.pt2 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
+	.pt3 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 75px 5px 0px }
+	.pt4 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
+	.pt5 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 75px 5px 0px }
+	.pt6 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
+	.pt7 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 75px 5px 0px }
+	.pt8 { float:left; width:255px; height:280px; text-align:left; vertical-align:middle; margin:0px 0px 5px 0px }
+	.pt9 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	.pt_h3 { color:#000; width:95%; text-align:center; vertical-align:middle }
+
+	#portfolio dl { width:235px; margin:10px 0px 0px 10px; line-height:30px }
+	#portfolio dt { line-height:30px }
+	.pt_img img { width:250px; height:150px; float:left; margin:0px 15px 0px 7px }
+
+	#form { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#page { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+ }
+
+@media screen and (min-width:150px) and (max-width:639px) {
+	#portfolio { background:#fff; width:100%; padding-top:5px }
+	.pt0 { width:90%; text-align:center; vertical-align:middle }
+	.pt1 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt2 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt3 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt4 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt5 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt6 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt7 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt8 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px }
+	.pt9 { width:90%; text-align:left; vertical-align:middle; margin-bottom:25px } 
+	.pt_h2 { color:#000; width:95%; text-align:center; vertical-align:middle }
+
+	#portfolio dl { margin:0px 0px 0px 10px; line-height:30px }
+	#portfolio dt { line-height:30px }
+	.pt_img img { width:95%; margin:7px 5px 0px 7px }
+
+	#form { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#page { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+ }

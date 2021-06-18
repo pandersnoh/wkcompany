@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+	#business { background:#fff; width:100% }
+	.pt_h2 h2 { color:#000; text-align:left; vertical-align:middle }
+	.pt1 { width:810px; height:40px; text-align:left; vertical-align:middle; margin-bottom:30px }
+	.pt2 { width:810px; text-align:left; vertical-align:middle; margin-bottom:50px }
+	.pt3 { width:810px; text-align:left; vertical-align:middle; margin-bottom:50px }
+	.pt4 { width:810px; text-align:left; vertical-align:middle; margin-bottom:50px }
+	.pt_img { width:810px; text-align:left; vertical-align:middle; margin-bottom:50px } 
+	.pt_img img { width:260px; margin:0px 5px 0px 0px }
+	.pt_h2 { color:#000; width:810px }
+	.biz { font:bold 14pt 'nanum' }
+	}
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	#business { background:#fff; width:100% }
+	.pt1 { width:90%; height:50px; text-align:center; vertical-align:middle }
+	.pt2 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt3 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt4 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt_img { width:90%; text-align:center; vertical-align:middle }
+	.pt_img img { width:35%; margin:0px 10px 0px 0px }
+	.pt_h2 p { font:bold 10pt 'nanum' }
+	.biz { font:bold 12pt 'nanum' }
+	img.pt_img2 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+ }
+
+@media screen and (min-width:150px) and (max-width:639px) {
+	#business { background:#fff; width:85% }
+	.pt1 { width:95%; height:60px; text-align:center; vertical-align:middle}
+	.pt2 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt3 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt4 { width:90%; text-align:center; vertical-align:middle; margin-bottom:50px }
+	.pt_img { text-align:center; vertical-align:middle; margin:0px 5px 0px 0px }
+	.pt_img img { width:45% }
+	.biz { font:bold 12pt 'nanum' }
+	.pt_h2 p { font:bold 10pt 'nanum' }
+	img.pt_img2 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	}

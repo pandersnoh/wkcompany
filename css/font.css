@@ -1,0 +1,209 @@
+/*  Raleway   */
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 200;
+    src: local('Raleway-Regular'), local('Raleway-Regular'), local('Raleway-Regular');
+    src: url(../font/Raleway-Regular.eot);
+    src: url(../font/Raleway-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../font/Raleway-Regular.woff) format('woff'),
+    url(../font/Raleway-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 300;
+    src: local('Raleway-Medium'), local('Raleway-Medium'), local('Raleway-Medium');
+    src: url(../font/Raleway-Medium.eot);
+    src: url(../font/Raleway-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../font/Raleway-Medium.woff) format('woff'),
+    url(../font/Raleway-Medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: local('Raleway-Bold'), local('Raleway-Bold'), local('Raleway-Bold');
+    src: url(../font/Raleway-Bold.eot);
+    src: url(../font/Raleway-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/Raleway-Bold.woff) format('woff'),
+    url(../font/Raleway-Bold.otf) format('truetype');
+}
+
+
+/*  Franklin Gothic   */
+@font-face {
+    font-family: 'Franklin Gothic Book';
+    font-weight: 200;
+    src: local('FRABK'), local('FRABK'), local('FRABK');
+    src: url(../font/FRABK.eot);
+    src: url(../font/FRABK.eot?#iefix) format('embedded-opentype'),
+    url(../font/FRABK.woff) format('woff'),
+    url(../font/FRABK.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Italic';
+    font-weight: 200;
+    src: local('FRABKIT'), local('FRABKIT'), local('FRABKIT');
+    src: url(../font/FRABKIT.eot);
+    src: url(../font/FRABKIT.eot?#iefix) format('embedded-opentype'),
+    url(../font/FRABKIT.woff) format('woff'),
+    url(../font/FRABKIT.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium Cond';
+    font-weight: 200;
+    src: local('FRAMDCN'), local('FRAMDCN'), local('FRAMDCN');
+    src: url(../font/FRAMDCN.eot);
+    src: url(../font/FRAMDCN.eot?#iefix) format('embedded-opentype'),
+    url(../font/FRAMDCN.woff) format('woff'),
+    url(../font/FRAMDCN.otf) format('truetype');
+}
+
+/*  Code   */
+@font-face {
+    font-family: 'Code';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Code_Light'), local('Code_Light'), local('Code_Light');
+    src: url(../font/Code_Light.eot);
+    src: url(../font/Code_Light.eot?#iefix) format('embedded-opentype'),
+    url(../font/Code_Light.woff) format('woff'),
+    url(../font/Code_Light.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Code';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Code_Bold'), local('Code_Bold'), local('Code_Bold');
+    src: url(../font/Code_Bold.eot);
+    src: url(../font/Code_Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/Code_Bold.woff) format('woff'),
+    url(../font/Code_Bold.otf) format('truetype');
+}
+
+/*  Noto Sans */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('NotoSans-DemiLight'), local('NotoSans-DemiLight'), local('NotoSans-DemiLight');
+    src: url(../font/NotoSans-DemiLight.eot);
+    src: url(../font/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSans-DemiLight.woff) format('woff'),
+    url(../font/NotoSans-DemiLight.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('NotoSans-Regular'), local('NotoSans-Regular'), local('NotoSans-Regular');
+    src: url(../font/NotoSans-Regular.eot);
+    src: url(../font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSans-Regular.woff) format('woff'),
+    url(../font/NotoSans-Regular.otf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+    src: url(../font/NotoSans-Medium.eot);
+    src: url(../font/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSans-Medium.woff) format('woff'),
+    url(../font/NotoSans-Medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('Noto Sans Bold'), local('Noto Sans Bold');
+    src: url(../font/NotoSans-Bold.eot);
+    src: url(../font/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSans-Bold.woff) format('woff'),
+    url(../font/NotoSans-Bold.otf) format('truetype');
+}
+
+
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('OpenSans-Regular'), local('OpenSans-Regular'), local('OpenSans-Regular');
+    src: url(../font/OpenSans-Regular.eot);
+    src: url(../font/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../font/OpenSans-Regular.woff) format('woff'),
+    url(../font/OpenSans-Regular.otf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('OpenSans-Semibold'), local('OpenSans-Semibold'), local('OpenSans-Semibold');
+    src: url(../font/OpenSans-Semibold.eot);
+    src: url(../font/OpenSans-Semibold.eot?#iefix) format('embedded-opentype'),
+    url(../font/OpenSans-Semibold.woff) format('woff'),
+    url(../font/OpenSans-Semibold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('OpenSans-Bold'), local('OpenSans-Bold'), local('OpenSans-Bold');
+    src: url(../font/OpenSans-Bold.eot);
+    src: url(../font/OpenSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/OpenSans-Bold.woff) format('woff'),
+    url(../font/OpenSans-Bold.otf) format('truetype');
+}
+
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 200;
+    src: local('Roboto-Light'), local('Roboto-Light'), local('Roboto-Light');
+    src: url(../font/Roboto-Light.eot);
+    src: url(../font/Roboto-Light.eot?#iefix) format('embedded-opentype'),
+    url(../font/Roboto-Light.woff) format('woff'),
+    url(../font/Roboto-Light.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: local('Roboto-Regular'), local('Roboto-Regular'), local('Roboto-Regular');
+    src: url(../font/Roboto-Regular.eot);
+    src: url(../font/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../font/Roboto-Regular.woff) format('woff'),
+    url(../font/Roboto-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: local('Roboto-Medium'), local('Roboto-Medium'), local('Roboto-Medium');
+    src: url(../font/Roboto-Medium.eot);
+    src: url(../font/Roboto-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../font/Roboto-Medium.woff) format('woff'),
+    url(../font/Roboto-Medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: local('Roboto-Bold'), local('Roboto-Bold'), local('Roboto-Bold');
+    src: url(../font/Roboto-Bold.eot);
+    src: url(../font/Roboto-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/Roboto-Bold.woff) format('woff'),
+    url(../font/Roboto-Bold.otf) format('truetype');
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+	#overview { background:#fff; width:100% }
+	#overview .pt_h2 h2 { color:#000; text-align:left; vertical-align:middle }
+	.pt1 { width:810px; height:60px; text-align:left; vertical-align:middle }
+	.pt2 { width:810px; text-align:left; vertical-align:middle }
+	.pt3 { width:810px; text-align:left; vertical-align:middle }
+	.pt_img { width:810px; text-align:left; vertical-align:middle }
+	.pt_img img { width:260px; margin:0px 5px 0px 0px }
+	.pt_h2 { width:810px }
+	.pt_h2 p { font:bold 13pt 'nanum' }
+	}
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	#overview { background:#fff; width:100% }
+	.pt1 { width:90%; height:60px; text-align:center; vertical-align:middle }
+	.pt1 p { font:normal 10pt 'nanum' }
+	.pt2 { width:90%; text-align:center; vertical-align:middle }
+	.pt3 { width:90%; text-align:center; vertical-align:middle }
+	.pt_img { width:90%; text-align:center; vertical-align:middle }
+	.pt_img img { width:35%; margin:0px 10px 0px 0px }
+	.pt_h2 p { font:bold 11pt 'nanum' }
+	img.pt_img2 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+}
+
+@media screen and (min-width:150px) and (max-width:639px) {
+	#overview { background:#fff; width:85% }
+	.pt1 { width:95%; text-align:center; vertical-align:middle; margin:0px 5px 25px 10px }
+	.pt2 { width:90%; text-align:center; vertical-align:middle; margin:0px 5px 25px 13px }
+	.pt3 { width:90%; text-align:center; vertical-align:middle; margin:0px 5px 25px 13px }
+	.pt_img { text-align:center; vertical-align:middle }
+	.pt_img img { width:45% }
+	.pt_h2 { width:90% }
+	.pt_h2 p { font:bold 11pt 'nanum' }
+	img.pt_img2 { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	}

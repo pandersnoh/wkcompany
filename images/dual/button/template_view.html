@@ -1,0 +1,198 @@
+{block name=javascript}
+<script type="text/javascript" src="/xf/lib/xmlHttpReq.js"></script>
+<script type="text/javascript" src="{$_s.skin_path}/js/zoom.js"></script>
+{/block}
+{block name=body}
+<section id="container">
+	<!--CONTENTS-->
+	<section id="contents">
+		<p id="position">
+			<img src="{$_s.skin_path}/img/common/arrow_title.png" alt="" /> 현재위치 : 
+			<a href="/">홈</a> >
+			<a>기획전</a> >
+			<b>{ $plan_info.title }</b>
+		</p>
+		<!--기획전 메뉴-->
+		<form name="f1" method="post" action="">
+			<input type="hidden" name="popup" value=""/>
+		</form>
+		<article id="planningTabMu">			
+			<h3>
+				{if $plan_info.plan_top_img ne ""}
+					<img src="{ $plan_info.plan_top_img }" usemap="#plan_top_img" alt="기획전 상단 이미지" />
+				{else}
+					<!-- <img src="{$_s.skin_path}/img/contents/planning_visual.png" alt="" /> -->
+				{/if}
+					{$plan_info.map}
+			</h3>
+			{** 하위폴더 사용 안하는 경우 **}
+			{if $cat_info.type eq "0"}					
+			{else}
+				<ul id="planning_category">	
+					{ foreach from=$cat_info.tmenu key=cnt name=tmenu item=tmenu }
+					<li><a href="#{ $tmenu.key }">{ $tmenu.val }</a></li>		
+					{ /foreach }
+				</ul>
+			{/if}
+		</article>
+		<!--/기획전 메뉴-->
+		<!--리스트_기본 이미지형-->
+		{**하위 폴더를 사용안하는 경우**}
+		{ if $cat_info.type eq "0"}
+		{ if $cat_info.list[0] ne null }
+			
+		<article id="goodsList_wrap">
+			<ul class="goodsList_img">
+				{foreach from=$cat_info.list item=ilist name=data}
+				<li>
+				<div>
+					<a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}" class="img">
+						<img src="http://image.footscape.com/images/goods_img/{$ilist.reg_dm}/{$ilist.goods_no}/{$ilist.goods_no}_a_160.{$ilist.img_ext}" alt="{$ilist.goods_nm}" />
+					</a>
+					{if $ilist.n_goods_yn eq 'Y'}
+						<span class="new">
+							<img src="{$_s.skin_path}/img/common/i_new.png" alt="NEW" />
+						</span>
+					{/if}
+					<ul class="helper">
+						<li><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}" target="_blank"><img src="{$_s.skin_path}/img/common/helper01.png" alt="새창" /></a><span>새창</span></li>
+						<li><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}"><img src="{$_s.skin_path}/img/common/helper02.png" alt="즐겨찾기" /></a><span class="bg02">즐겨찾기</span></li>
+						<!--<li><a href="#"><img src="{$_s.skin_path}/img/common/helper03.png" alt="장바구니" /></a><span class="bg02">장바구니</span></li>-->
+						<li><a href="#" onclick="zoom.view(this,'{$ilist.goods_no}','{$ilist.goods_sub}'); return false;"><img src="{$_s.skin_path}/img/common/helper04.png" alt="확대" /></a><span>확대</span></li>
+						<li class="size_view"><a onmouseover="viewSizeCustom(this,'opt_{$ilist.goods_no}_{$ilist.goods_sub}','{$ilist.goods_no}','{$ilist.goods_sub}'); return false;"><img src="{$_s.skin_path}/img/common/helper05.png" alt="옵션" /></a>
+							<span>옵션</span>					
+							<p id="opt_{$ilist.goods_no}_{$ilist.goods_sub}"></p>
+						</li>
+					</ul>
+					<dl>
+							<dt><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}"><br/>{$ilist.head_desc|truncate:40:"..."}<span>{$ilist.goods_nm|truncate:20:"..."}</span></a></dt>
+						{if $ilist.goods_sh > $ilist.price}
+							<dd class="price"><s><b>{$ilist.goods_sh|number_format}</b>won</s></dd>
+						{/if}
+						{if $ilist.coupon_price > 0}
+							<dd class="price02"><b>{$ilist.coupon_price|number_format}</b>won</dd>
+						{else}
+							<dd class="price02"><b>{$ilist.price|number_format}</b>won</dd>
+						{/if}
+						{if $ilist.point > 0}
+							<dd class="reserve"><b>{$ilist.point|number_format}</b>p</dd>
+						{/if}
+					</dl>
+				</div>
+				</li>
+				{/foreach}
+			</ul>
+			{literal}
+			<script type="text/javascript">
+				$(".helper li").hover(function(){
+					$(this).addClass("on");
+				}, function(){
+					$(this).removeClass("on");
+				});
+				$(".size_view").hover(function(){
+					$(".size_view p").empty();
+				}, function(){
+				});
+			</script>
+			{/literal}
+		</article>
+		{/if}
+		{**하위 폴더를 사용하는 경우**}
+		{elseif $cat_info.type eq "1"}
+			{foreach from=$cat_info.mmenu item=mmenu name=data}
+				<article>
+					<ul>
+						<li>
+							<div style="padding-top: 10px;">
+								
+							{if $mmenu.header_html}
+								{$mmenu.header_html}
+							{else}
+								<h1><a name="{ $mmenu.key }">&lt;{ $mmenu.val }&gt;</a></h1>
+							{/if}	
+							</div>
+						</li>
+					</ul>
+				</article>
+				<article id="goodsList_wrap">			
+					<ul class="goodsList_img">
+						{foreach from=$mmenu.plist item=ilist name=data}				
+							<li>					
+								<div>
+									<a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}" class="img">
+										<img src="http://image.footscape.com/images/goods_img/{$ilist.reg_dm}/{$ilist.goods_no}/{$ilist.goods_no}_a_160.{$ilist.img_ext}" alt="{$ilist.goods_nm}" />
+									</a>
+									{if $ilist.n_goods_yn eq 'Y'}
+										<span class="new">
+											<img src="{$_s.skin_path}/img/common/i_new.png" alt="NEW" />
+										</span>
+									{/if}
+										<ul class="helper">
+											<li><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}" target="_blank"><img src="{$_s.skin_path}/img/common/helper01.png" alt="새창" /></a><span>새창</span></li>
+											<li><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}"><img src="{$_s.skin_path}/img/common/helper02.png" alt="즐겨찾기" /></a><span class="bg02">즐겨찾기</span></li>
+<!--											<li><a href="#"><img src="{$_s.skin_path}/img/common/helper03.png" alt="장바구니" /></a><span class="bg02">장바구니</span></li>-->
+											<li><a href="#" onclick="zoom.view(this,'{$ilist.goods_no}','{$ilist.goods_sub}'); return false;"><img src="{$_s.skin_path}/img/common/helper04.png" alt="확대" /></a><span>확대</span></li>
+											<li class="size_view"><a onmouseover="viewSizeCustom(this,'opt_{$ilist.goods_no}_{$ilist.goods_sub}','{$ilist.goods_no}','{$ilist.goods_sub}'); return false;"><img src="{$_s.skin_path}/img/common/helper05.png" alt="옵션" /></a>
+												<span>옵션</span>					
+												<p id="opt_{$ilist.goods_no}_{$ilist.goods_sub}"></p>
+											</li>
+										</ul>
+										<dl>
+											<dt><a href="/app/product/detail/{$ilist.goods_no}/{$ilist.goods_sub}"><br/>{$ilist.head_desc|truncate:30:"..."}<span>{$ilist.goods_nm|truncate:50:"..."}</span></a></dt>
+												{if $ilist.goods_sh > $ilist.price}
+													<dd class="price"><s><b>{$ilist.goods_sh|number_format}</b>won</s></dd>
+												{/if}
+												{if $ilist.coupon_price > 0}
+													<dd class="price02"><b>{$ilist.coupon_price|number_format}</b>won</dd>
+												{else}
+													<dd class="price02"><b>{$ilist.price|number_format}</b>won</dd>
+												{/if}
+												{if $ilist.point > 0}
+													<dd class="reserve"><b>{$ilist.point|number_format}</b>p</dd>
+												{/if}
+										</dl>
+									</div>
+								</li>
+						{/foreach}
+					</ul>
+					{literal}
+					<script type="text/javascript">
+						$(".helper li").hover(function(){
+							$(this).addClass("on");
+						}, function(){
+							$(this).removeClass("on");
+						});
+						$(".size_view").hover(function(){
+							$(".size_view p").empty();
+						}, function(){
+						});
+					</script>
+					{/literal}
+				</article>
+			{/foreach}
+		{/if}	
+		<!--/리스트_기본 이미지형-->
+		<!--페이지 사용 못 함.-->
+<!--		<p class="pagination">
+			<a href=""><img src="{$_s.skin_path}/img/common/paging01.png" alt="맨뒤로" /></a>
+			<a href=""><img src="{$_s.skin_path}/img/common/paging02.png" alt="뒤로" /></a>
+			<span>
+				<a href="" class="on">1</a>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="">9</a>
+				<a href="">10</a>
+			</span>
+			<a href=""><img src="{$_s.skin_path}/img/common/paging03.png" alt="앞으로" /></a>
+			<a href=""><img src="{$_s.skin_path}/img/common/paging04.png" alt="맨앞으로" /></a>
+		</p>-->
+	</section>
+	<!--/CONTENTS-->
+
+</section>
+{/block}

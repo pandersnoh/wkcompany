@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+	#wrap { width:100%; margin:auto; background:#fff; }
+	.siteinfo { margin:0; padding:0; text-indent:-9999px; z-index:9999999; width:200px; height:200px; background:url(../images/mediaquery.png); position:fixed; top:0; right:0; }
+	#header { background:#fff; text-align:center; width:1600px; height:70px }
+	#header .logo { float:left; width:200px }
+	#header h1 { position:absolute; top:0 }
+	#header h1 a { width:200px; height:47px; text-indent:-9999px; display:block; background:url(../images/logo.jpg) }
+	#header h2 { text-align:right; font:bold 12pt 'nanum'; padding:20px 15px 0px 0px }
+	#banner { width:100%; margin-bottom:60px }
+	.theme-default .nivoSlider { position:relative; background:#fff url(nivo-slider/loading.gif) no-repeat 50% 50% }
+	.theme-default .nivoSlider img { position:absolute; top:0px; left:0px; display:none }
+	.theme-default .nivo-controlNav { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	.theme-default .nivo-directionNav a { display:block; width:30px; height:30px; background:url(nivo-slider/arrows.png) no-repeat; text-indent:-9999px;
+														border:0; opacity: 0; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out;
+														-o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
+	.theme-default:hover .nivo-directionNav a { opacity: 1; }
+	.theme-default a.nivo-nextNav { background-position:-30px 0; right:15px; }
+	.theme-default a.nivo-prevNav { left:15px; }
+
+	#nav {width:100%;height: 45px;background:#c00;}
+	#nav .select1 { background:#ff0000 }
+	#nav ul {width:1600px;/* height: 40px; *//* padding:0px 0px 0px 0px; */}
+	#nav ul li.m1 {float:left;width:100px;height: 45px;text-align:center;/* vertical-align:middle; */}
+	#nav ul li.m1 a {color:#fff;display:block;line-height: 45px;/* padding: 8px 0; */}
+	#nav ul li a:hover {/* height:27px; */background:#a01;}
+	#nav ul li img { width:150px; height:15px }
+	#nav .left { margin-left:33px }
+	#nav .right { margin-right:10px }
+
+	#contact { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#contact a { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#pc { text-align:center; vertical-align:middle; color:#000; margin:50px 0px 15px 0px }
+	#pc a { background:#666; font:bold 15px 'nanum'; color:#fff; border:3px solid #444; border-radius:5pt; padding:5px 5px 5px 5px } 
+	#pc a:hover { background:#c01; border:3px solid #a01 } 
+
+	#footer { width:100%; background:#626262; border-top:1px #ccc solid; margin-top:80px }
+	#footer .footer_inner {clear:both;width: 1600px;/* height:90px; */margin:0 auto;padding: 20px 0 60px;overflow:hidden;}
+	#footer .footer_image { float:left; width:150px; padding:10px 30px 0px 0px }
+	#footer p {color:#fff;margin:15px 20px 0px 0px;text-align:right;font-size: 14px;}
+	#footer address {color:#fff;margin:5px 20px 0px 0px;text-align:right;font-size: 14px;}
+	#footer .caution {color:#fff;font-size: 12px;font-weight: 300;line-height:16px;margin:15px 20px 0px 0px;text-align:right;}
+  }
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	#wrap { width:100%; margin:auto; background:#fff; font:normal 10pt 'nanum' }
+	.siteinfo { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#header { width:500px; height:120px; margin:auto; background:#fff; text-align:center; vertical-align:middle }
+	#header .logo { width:200px }
+	#header h1 a { width:200px; height:47px; text-indent:-9999px; display:block; background:url(../images/logo.jpg) }
+	#header h2 { margin-left:15px; font:bold 12pt 'nanum' }
+	#info { width:100%; height:20px; background:#ccc; text-align:center; margin:0 auto }
+	#info p { display:inline; text-align:center; color:#666; font:bold 9pt 'nanum'; vertical-align:middle }
+
+	#banner { width:100%; margin-bottom:25px }
+	.slider-wrapper { width:83%; margin:0 auto }	
+	.theme-default .nivo-controlNav { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	.theme-default .nivo-directionNav a { display:block; width:30px; height:30px; background:url(nivo-slider/arrows.png) no-repeat; text-indent:-9999px;
+														border:0; opacity: 0; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out;
+														-o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
+	.theme-default:hover .nivo-directionNav a { opacity: 1; }
+	.theme-default a.nivo-nextNav { background-position:-30px 0; right:15px; }
+	.theme-default a.nivo-prevNav { left:15px; }
+
+	#nav { width:100%; height:35px; background:#c00000 }
+	#nav .select1 { background:#ff0000 }
+	#nav ul { width:640px; height:40px; padding:0px 0px 0px 15px }
+	#nav ul li.m1 { float:left; width:120px; height:28px; text-align:center; padding-top:7px; font:bold 14pt 'nanum' }
+	#nav ul li.m1 a { color:#fff; display:block; width:100% }
+	#nav .left { margin-left:0px }
+	#nav .right { margin-right:5px }
+
+	#contact { height:60px; text-align:center; vertical-align:middle; color:#000; margin:35px 0px 5px 0px } 
+	#contact a { background:#c01; font:bold 16pt 'nanum'; color:#fff; border:3px solid #701; border-radius:5pt; padding:5px 5px 5px 5px } 
+	#pc { text-align:center; vertical-align:middle; color:#000; margin:5px 0px 15px 0px }
+	#pc a { background:#666; font:bold 12pt 'nanum'; color:#fff; border:3px solid #444; border-radius:5pt; padding:5px 5px 5px 5px } 
+
+	#footer { width:100%; background:#626262; border-top:1px #ccc solid; margin-top:35px }
+	#footer .footer_inner { clear:both; width:640px; height:170px; margin:0 auto; margin-top:2px; overflow:hidden }
+	#footer .footer_image { width:150px; padding:10px 30px 0px 0px }
+	#footer p { font:11px 'nanum'; color:#fff; margin:15px 0px 0px 0px; text-align:center }
+	#footer address { font:11px 'nanum'; color:#fff; margin:5px 0px 15px 0px; text-align:center }
+	#footer .caution { width:380px; font:bold 9pt '돋움'; color:#fff; line-height:16px; margin:5px 20px 0px 130px; text-align:center }
+ }
+
+@media screen and (min-width:150px) and (max-width:639px) {
+	#wrap { width:100%; margin:auto; background:#fff; font:normal 10pt 'nanum' }
+	.siteinfo { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#header { width:95%; margin:auto; background:#fff; margin:15px 0px 5px 0px; text-align:center; vertical-align:middle }
+	#header h2 { margin-left:15px; font:bold 12pt 'Nanum' }
+	#info { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+	#header .logo { width:200px }
+	#header h1 a { width:200px; height:47px; text-indent:-9999px; display:block; background:url(../images/logo.jpg) }
+	#banner { position:absolute; left:-1000%; top:0; width:1px; height:1px; overflow:hidden; display:block }
+
+	#nav { width:100%; background:#c00000 }	
+	#nav .select1 { background:#ff0000 }
+	#nav ul { width:100%; padding:0px 0px 0px 0px }
+	#nav ul li.m1 { width:100%; height:35px; text-align:center; padding-top:10px; font:bold 18pt 'nanum'; border-top:1px solid #fff; }
+	#nav ul li.m1 a { color:#fff; display:block; width:100% }
+	#nav ul li.bottom { border-bottom:1px solid #fff }
+
+	#contact { height:60px; text-align:center; vertical-align:middle; color:#000; margin:50px 0px 5px 0px } 
+	#contact a { background:#c01; font:bold 16pt '돋움'; color:#fff; border:3px solid #701; border-radius:5pt; padding:5px 5px 5px 5px } 
+	#pc { text-align:center; vertical-align:middle; color:#000; margin:5px 0px 15px 0px }
+	#pc a { background:#666; font:bold 10pt '돋움'; color:#fff; border:3px solid #444; border-radius:5pt; padding:5px 5px 5px 5px } 
+
+	#footer { width:100%; background:#626262; border-top:1px #ccc solid; margin-top:35px }
+	#footer .footer_inner { clear:both; width:220px; height:180px; margin:0 auto; margin-top:2px; overflow:hidden }
+	#footer .footer_image { width:150px; padding:10px 0px 0px 0px }
+	#footer p { font:11px 'nanum'; color:#fff; margin:15px 0px 0px 0px; text-align:center }
+	#footer address { font:11px 'nanum'; color:#fff; margin:5px 0px 15px 0px; text-align:center }
+	#footer .caution { width:220px; font:bold 8pt '돋움'; color:#fff; line-height:16px; margin:5px 0px 0px 0px; text-align:center }
+ }
