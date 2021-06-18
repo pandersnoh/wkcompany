@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 @media screen and (min-width:1000px) {
-	#location { background:#fff; width:831px }
+	#location { background:#fff; width:1600px }
 	#location h2 { color:#000; text-align:left; vertical-align:middle }
-	.pt1 { width:831px; text-align:left; vertical-align:middle }
-	.pt1 iframe { width:831px; height:450px; margin:0px 5px 5px 0px }
+	.pt1 { text-align:left; vertical-align:middle }
+	.pt1 iframe { width:100%; height:450px; margin:0px 5px 5px 0px }
 	.pt2 { width:100%; text-align:center; vertical-align:middle }
-	.pt_h2 { color:#000; width:810px }
+	.pt_h2 { color:#000;}
 	}
 
 @media screen and (min-width:640px) and (max-width:999px) {
